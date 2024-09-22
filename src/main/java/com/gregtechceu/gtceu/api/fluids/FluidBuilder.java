@@ -308,7 +308,8 @@ public class FluidBuilder {
         if (hasCustomFlowing) {
             flowing = new ResourceLocation(modid, "block/fluids/fluid." + name + "_flow");
         } else {
-            flowing = still;
+            // debug flowing
+            flowing = new ResourceLocation(modid, "block/fluids/fluid." + name + "_flow");
         }
     }
 
